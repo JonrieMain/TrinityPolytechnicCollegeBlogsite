@@ -1,0 +1,59 @@
+.main-con .enroll{
+height: 100%;
+width: 100%;
+max-width: 1570px;
+margin: 2rem auto 0 auto;
+}
+.main-con .enroll .enroll-content{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+.main-con .enroll .enroll-content p{
+	font-weight: 700;
+	font-size: 1.3rem;
+	height: 100%;
+	width: 100%;
+	max-height: 450px;
+	max-width: 650px;
+	overflow: scroll;
+	padding: .2rem;
+}
+.main-con .enroll .enroll-content img{
+	height: 100%;
+	width: 100%;
+	max-height: 500px;
+	max-width: 900px;
+}
+.main-con .enroll .enroll-btn{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem 0;
+}
+.main-con .enroll .enroll-btn a{
+	text-decoration: none;
+	color: #fff;
+	background: var(--parangBlue);
+	padding: .8rem 3rem;
+	border-radius: .2rem;
+	transition: .5s cubic-bezier(0.4, 1.03, 1, 1);
+}
+.main-con .enroll .enroll-btn a:hover{
+	background: var(--parangYellow);
+}
+
+
+
+@media(max-width: 1400px){
+
+	.main-con .enroll .enroll-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+}

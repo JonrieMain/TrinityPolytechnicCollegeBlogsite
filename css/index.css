@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+@import "enroll.css";
+@import "testimonials.css";
+@import "missionVision.css";
+@import "footer.css";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto Mono', monospace;
+}
+:root{
+	--parangYellow: #fbb601;
+	--parangBlue: #020d5f;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--parangYellow); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--parangBlue); 
+}
+.main-con{
+	height: 100%;
+	width: 100%;
+	min-width: 200px;
+}
+.main-con header{
+	width: 100%;
+	height: 7rem;
+	position: fixed;
+	z-index: 100000;
+	background: #fff;
+}
+.main-con header .head1{
+	display: flex;
+	justify-content: space-around;
+}
+.main-con header .head1 >span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-con header .head1 >span h1{
+	text-transform: uppercase;
+	color: var(--parangBlue);
+	font-weight: 700;
+}
+.main-con header .head1 img{
+	width: 100%;
+	height: 100%;
+	max-width: 6.5rem;
+	max-height: 6.5rem;
+}
+
+.main-con header .head1 span:nth-child(2) i{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+	color: var(--parangBlue);
+	cursor: pointer;
+}
+
+.main-con header .head2{
+	height: 6rem;
+	width: 100%;
+	background: var(--parangBlue);
+}
+.main-con header .head2 ul{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0;
+}
+.main-con header .head2 ul li{
+	list-style: none;
+	padding: 0 1rem;
+}
+
+.main-con header .head2 ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.4rem;
+	transition: .4s cubic-bezier(0.61, 0.51, 0, 1.11);
+}
+.main-con header .head2 ul li a:hover{
+	color: var(--parangYellow);
+}
+.main-con header .head2 i{
+	position: absolute;
+	color: var(--parangYellow);
+	top: 50%;
+	right: 1%;
+	transform: translateY(-50%);
+	font-size: 2.7rem;
+	cursor: pointer;
+}
+.main-con header .head2 .fa-xmark{
+	display: none;
+}
+.main-con header .head2 .fa-bars-staggered{
+	display: none;
+}
+
+
+.main-con .caro{
+	padding-top: 15rem;
+	margin: 0 auto;
+	z-index: -10000;
+}
+.main-con .caro #carouselExampleDark .carousel-inner .carousel-item img{
+	max-height: 550px;
+}
+
+
+
+
+
+
+
+@media(max-width: 785px){
+	.main-con header .head1 span i{
+		display: none;
+	}
+
+
+	.main-con header .head1{
+		display: flex;
+		justify-content: unset;
+		flex-direction: column;
+	}
+	.main-con header .head1 >span h1{
+		text-transform: uppercase;
+		color: var(--parangBlue);
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+	.main-con header .head1 img{
+		max-width: 4rem;
+		max-height: 4rem;
+	}
+
+	.main-con header .head2{
+	position: relative;
+	height: 10rem;
+	width: 100%;
+}
+
+	.main-con header .head2 .fa-bars-staggered{
+		display: block;
+	}
+	.main-con header .head2 ul{
+		height: 10rem;
+		flex-direction: column;
+		background: var(--parangBlue);
+		position: absolute;
+		top: 0;
+		left: -40%;
+		transition: .5s ease;
+		transform: translateX(-50%);
+	}
+
+	.main-con header .head2 i{
+	position: absolute;
+	top: 40%;
+	right: 10%;
+	transform: translateY(-50%);
+}
+
+}
+
+@media(max-width: 500px){
+		.main-con header .head1 >span h1{
+		font-weight: 700;
+		font-size: 1.1rem;
+		text-align: center;
+	}
+
+}
