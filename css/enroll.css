@@ -14,16 +14,16 @@ margin: 2rem auto 0 auto;
 	font-size: 1.3rem;
 	height: 100%;
 	width: 100%;
-	max-height: 450px;
-	max-width: 650px;
+	max-height: 500px;
+	max-width: 1200px;
 	overflow: scroll;
-	padding: .2rem;
+	padding: .3rem;
 }
 .main-con .enroll .enroll-content img{
 	height: 100%;
 	width: 100%;
 	max-height: 500px;
-	max-width: 900px;
+	max-width: 1200px;
 }
 .main-con .enroll .enroll-btn{
 	width: 100%;
@@ -47,6 +47,7 @@ margin: 2rem auto 0 auto;
 
 
 
+/* Media max width 1400px */
 @media(max-width: 1400px){
 
 	.main-con .enroll .enroll-content{
@@ -54,6 +55,10 @@ margin: 2rem auto 0 auto;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.main-con .enroll .enroll-content p{
+	margin-top: 1rem;
 }
 
 }

@@ -9,8 +9,9 @@
 }
 .main-con .missionVision div p{
 	font-size: 1.5rem;
-	word-break: break-all;
+	break-word: word-break;
 	margin-bottom: 0;
+	max-width: 1500px;
 }
 .main-con .missionVision div h1{
 	color: var(--parangYellow);
@@ -20,9 +21,17 @@
 }
 .main-con .missionVision .mission{
 	margin-bottom: 7rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 } 
 .main-con .missionVision .vision{
 	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .main-con .missionVision .about-video{
 	width: 100%;
@@ -51,6 +60,8 @@
 
 }
 
+
+/*Media max width 600px*/
 @media(max-width: 600px){
 	.main-con .missionVision .about-video iframe{
 		max-width: 550px;
@@ -59,6 +70,9 @@
 
 }
 
+
+
+/*Media max width 460px*/
 @media(max-width: 460px){
 	.main-con .missionVision .about-video{
 	max-height: 300px;

@@ -1,8 +1,12 @@
+/*import fontawesome*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap');
+/*Other CSS import*/
 @import "enroll.css";
 @import "testimonials.css";
 @import "missionVision.css";
 @import "footer.css";
+
+/*Reset*/
 *{
 	padding: 0;
 	margin: 0;
@@ -11,10 +15,15 @@
 	text-decoration: none;
 	font-family: 'Roboto Mono', monospace;
 }
+
+/*Root*/
 :root{
 	--parangYellow: #fbb601;
 	--parangBlue: #020d5f;
 }
+
+
+/*For Scroll Bar*/
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -36,6 +45,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--parangBlue); 
 }
+
+
 .main-con{
 	height: 100%;
 	width: 100%;
@@ -119,8 +130,10 @@
 }
 
 
+
+/* Carousel style */
 .main-con .caro{
-	padding-top: 10rem;
+	padding-top: 12rem;
 	margin: 0 auto;
 	z-index: -10000;
 	max-width: 1500px;
@@ -134,7 +147,7 @@
 
 
 
-
+/* Media */
 @media(max-width: 785px){
 	.main-con header .head1 span i{
 		display: none;
@@ -182,6 +195,10 @@
 	top: 40%;
 	right: 10%;
 	transform: translateY(-50%);
+}
+
+.main-con .caro{
+	padding-top: 8.1rem;
 }
 
 }
