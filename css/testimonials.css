@@ -1,4 +1,10 @@
-.main-con .testimonials{
+.main-con .testimonials h1{
+	text-align: center;
+	margin-top: 1.5rem;
+	color: var(--parangYellow);
+	font-size: 3rem;
+}
+.main-con .testimonials .sub-con{
 	height: 100%;
 	width: 100%;
 	background: #fff;
@@ -9,7 +15,7 @@
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 1.5rem;
 }
-.main-con .testimonials .tes1,.tes2,.tes3{
+.main-con .testimonials .sub-con .tes1,.tes2,.tes3{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -22,7 +28,7 @@
 	padding: .5rem;
 	margin: 0 auto;
 }
-.main-con .testimonials div img{
+.main-con .testimonials .sub-con div img{
 	height: 100%;
 	width: 100%;
 	max-width: 5rem;
@@ -30,19 +36,19 @@
 	border-radius: 50%;
 	margin-bottom: 4rem;
 }
-.main-con .testimonials div h1{
+.main-con .testimonials .sub-con div h1{
 	color: var(--parangYellow);
 	font-weight: 400;
 	text-align: center;
 
 }
-.main-con .testimonials div p{
+.main-con .testimonials  .sub-con div p{
 	font-weight: 500;
 	font-size: 1.2rem;
 	text-align: center;
 
 }
-.main-con .testimonials .star-con i{
+.main-con .testimonials  .sub-con .star-con i{
 	color: var(--parangBlue);
 }
 
@@ -50,10 +56,15 @@
 /* media max-width 1200px */
 @media(max-width: 1200px){
 
-	.main-con .testimonials{
+	.main-con .testimonials .sub-con {
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, 1fr);
 	grid-row-gap: 1rem;
 }
 
+}
+@media(max-width: 400px){
+		.main-con .testimonials h1{
+		font-size: 1.4rem;
+	}
 }

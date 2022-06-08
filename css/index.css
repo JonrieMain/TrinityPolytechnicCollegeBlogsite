@@ -68,10 +68,14 @@
 	justify-content: center;
 	align-items: center;
 }
-.main-con header .head1 >span h1{
+.main-con header .head1 >span a h1{
 	text-transform: uppercase;
 	color: var(--parangBlue);
 	font-weight: 700;
+	cursor: pointer;
+}
+.main-con header .head1 >span a{
+	text-decoration: none;
 }
 .main-con header .head1 img{
 	width: 100%;
@@ -85,8 +89,11 @@
 	padding-right: 1rem;
 	color: var(--parangBlue);
 	cursor: pointer;
+	transition: .3s linear;
 }
-
+.main-con header .head1 span:nth-child(2) i:hover{
+	color: var(--parangYellow);
+}
 .main-con header .head2{
 	height: 6rem;
 	width: 100%;
@@ -204,7 +211,7 @@
 }
 
 @media(max-width: 500px){
-		.main-con header .head1 >span h1{
+		.main-con header .head1 >span a h1{
 		font-weight: 700;
 		font-size: 1.1rem;
 		text-align: center;
